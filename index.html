@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="ConectaVelandia – App educativa sobre redes domésticas para familias de la vereda Velandia. Aprende conceptos de redes, configuración de router, optimización Wi-Fi, solución de problemas y seguridad informática." />
+  <meta name="theme-color" content="#6366f1" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ConectaVelandia" />
+
+  <title>ConectaVelandia – Aprende sobre Redes Domésticas</title>
+
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" href="./assets/icons/icon-192.png" type="image/png" />
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+  <!-- sql.js for SQLite in browser -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Loading state -->
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:16px;">
+      <div style="width:64px;height:64px;background:linear-gradient(135deg,#6366f1,#22d3ee);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:32px;animation:pulse-glow 2s infinite;">📶</div>
+      <div style="font-size:20px;font-weight:700;background:linear-gradient(135deg,#6366f1,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">ConectaVelandia</div>
+      <div style="font-size:13px;color:#475569;">Cargando...</div>
+    </div>
+  </div>
+
+  <!-- Load scripts in order -->
+  <script src="./assets/js/modules.js"></script>
+  <script src="./assets/js/db.js"></script>
+  <script src="./assets/js/ui.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
